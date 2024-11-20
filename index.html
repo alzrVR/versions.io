@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>versions.io</title>
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Center the text on the screen */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: black;
+            font-family: "Kanit", cursive, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        /* Centered text styling */
+        .content {
+            font-size: 3em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Centered Text -->
+    <div class="content">
+        versions.io
+    </div>
+
+    <!-- JavaScript to change the tab title -->
+    <script>
+        const titles = ["versions.io is just simply...", "better", "more fun", "and safer."];
+        let titleIndex = 0;
+
+        setInterval(() => {
+            document.title = titles[titleIndex];
+            titleIndex = (titleIndex + 1) % titles.length;
+        }, 2000); // Change every 2 seconds
+    </script>
+
+</body>
+</html>
