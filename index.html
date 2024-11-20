@@ -17,9 +17,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             min-height: 100vh;
             background-color: black;
-            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-family: "Kanit", cursive, sans-serif;
             color: white;
             text-align: center;
         }
@@ -28,6 +29,26 @@
         .content {
             font-size: 3em;
             font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: black;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #f3f3f3;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -37,6 +58,11 @@
     <div class="content">
         versions.io
     </div>
+
+    <!-- Button to Discord -->
+    <a href="https://discord.gg/uGTWQNzhwu" class="button" target="_blank">
+        Join Our Discord
+    </a>
 
     <!-- JavaScript to change the tab title -->
     <script>
